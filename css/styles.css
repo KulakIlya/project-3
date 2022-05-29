@@ -1,0 +1,456 @@
+:root {
+    --main-font-family: 'Poppins';
+    --main-color: #000000;
+    --secondary-color: #8f95a5;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.title {
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.17;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    width: 1354px;
+}
+
+/* Header */
+
+.header > .container {
+    align-items: center;
+
+    display: flex;
+
+    white-space: nowrap;
+}
+
+.logo {
+    margin-top: 57px;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+
+    color: var(--main-color);
+}
+
+.accent {
+    color: var(--secondary-color);
+}
+
+.nav-list {
+    margin: 0;
+    margin-left: 253px;
+
+    display: flex;
+}
+
+.nav-list .item {
+    padding-top: 71px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+.header .btn {
+    margin-top: 57px;
+    margin-left: 245px;
+    text-align: center;
+    padding: 17px 57px;
+
+    min-width: 220px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    border: 2px solid #263238;
+    border-radius: 5px;
+
+    color: var(--main-color);
+}
+
+/* Hero */
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .wrapper {
+    width: 526px;
+}
+
+.wrapper {
+    flex-direction: column;
+}
+
+.section-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+}
+
+.hero .description {
+    margin: 0;
+    margin-top: 40px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
+
+.hero-btn {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 117px;
+    padding-right: 117px;
+    margin-top: 61px;
+
+    width: 438px;
+    display: inline-block;
+    border-radius: 15px;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+    background: #263238;
+    color: #ffffff;
+}
+
+/* Skills */
+
+.skills .container {
+    width: 1295px;
+}
+
+.skills .title {
+    text-align: center;
+}
+
+.skills-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-list:first-child {
+    align-self: stretch;
+}
+
+.skills-list .item {
+    background-color: #f5f5f5;
+}
+
+/* .skills-list .item:not(:last-child :nth-child(3n)) {
+    margin-right: 18px;
+} */
+
+.writing .skills-image {
+    margin-left: 122px;
+    margin-right: 18px;
+}
+
+.reading .skills-image {
+    margin-right: 63px;
+}
+
+.listening {
+    display: flex;
+}
+
+.listening .skills-image {
+    margin-left: 90px;
+}
+
+.skills .btn {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 51px;
+    padding-right: 51px;
+    margin-top: 35px;
+    text-align: center;
+
+    min-width: 218px;
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+
+    background: #263238;
+    color: #ffffff;
+
+    border-radius: 5px;
+}
+
+.skills-title {
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.7;
+}
+
+.skills .description {
+    text-align: left;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
+
+/* About us */
+
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .wrapper {
+    width: 635px;
+}
+
+.about-us-title {
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.7;
+}
+
+.about-us .description {
+    margin: 0;
+    margin-top: 23px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
+
+.about-us .list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+.about-us .item {
+    text-align: center;
+    margin-right: 144px;
+    padding-top: 46px;
+}
+
+.about-us .stats {
+    margin-top: 15px;
+
+    white-space: nowrap;
+}
+
+.about-us-image {
+    margin-left: 154px;
+}
+
+/* Pricing */
+
+.pricing .container {
+    width: 1354px;
+}
+
+.pricing .title {
+    text-align: center;
+}
+
+.pricing .list {
+    margin: 0;
+    padding: 0;
+    margin-top: 57px;
+
+    display: flex;
+}
+
+.pricing .item {
+    width: 384px;
+}
+
+.first .price {
+    margin-top: 29px;
+}
+
+.pricing .item:not(:last-child) {
+    margin-right: 52px;
+}
+
+.pricing-title {
+    margin: 0;
+    margin-top: 40px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+
+    color: #263238;
+}
+
+.pricing .description {
+    margin: 0;
+    margin-top: 42px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
+
+.price {
+    margin-top: 59px;
+    text-align: center;
+
+    width: 240px;
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+
+    color: #263238;
+    background-color: #eeeeee;
+
+    border-radius: 5px;
+}
+
+.price .accent {
+    vertical-align: middle;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #546269;
+}
+
+/* Contact */
+
+.contact .container {
+    display: flex;
+}
+
+.contact .wrapper {
+    margin-left: 104px;
+}
+
+.contact .title {
+    padding-top: 33px;
+}
+
+.contact .description {
+    margin: 0;
+    margin-top: 37px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
+
+.form {
+    margin-top: 52px;
+}
+
+.text-input {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 33px;
+
+    width: 450px;
+
+    border: 1px solid #8f95a5;
+    border-radius: 10px;
+}
+
+.submit-input {
+    padding: 25px 81px;
+    margin-left: 12px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+
+    background-color: #263238;
+    color: #fff;
+
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 133px;
+    width: 1338px;
+    background: #c4c4c4;
+}
+
+/* Footer */
+
+.footer .container {
+    display: flex;
+}
+
+.footer .logo {
+    margin: 0;
+    margin-top: 31px;
+}
+
+.footer .description {
+    margin: 0;
+    margin-left: 638px;
+    align-self: flex-end;
+
+    min-width: 633px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+
+    color: var(--secondary-color);
+}
