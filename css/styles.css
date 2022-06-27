@@ -155,33 +155,37 @@ body {
 
 /* Skills */
 
-.skills .container {
-    width: 1295px;
-}
-
 .skills .title {
     text-align: center;
 }
 
 .skills-list {
-    margin: 0;
+    margin-top: 92px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skills-list:first-child {
-    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 531px 1fr;
+    grid-gap: 18px;
 }
 
 .skills-list .item {
     background-color: #f5f5f5;
+    border-radius: 10px;
 }
 
-/* .skills-list .item:not(:last-child :nth-child(3n)) {
-    margin-right: 18px;
-} */
+.skills-list .item:first-child {
+    grid-row: 1 / -1;
+}
+
+.skills-list .item:last-child {
+    grid-column: 2 / -1;
+}
+
+.skills-list .wrapper {
+    width: 100%;
+    margin-left: 43px;
+    margin-bottom: 44px;
+}
 
 .writing .skills-image {
     margin-left: 122px;
@@ -194,6 +198,7 @@ body {
 
 .listening {
     display: flex;
+    padding-top: 44px;
 }
 
 .listening .skills-image {
@@ -222,7 +227,6 @@ body {
 }
 
 .skills-title {
-    text-align: left;
     margin: 0;
     font-weight: 600;
     font-size: 30px;
@@ -230,7 +234,6 @@ body {
 }
 
 .skills .description {
-    text-align: left;
     margin: 0;
 
     font-weight: 400;
